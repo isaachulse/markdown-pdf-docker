@@ -17,7 +17,7 @@ RUN apt-get update -y \
   lmodern
 
 # Install Pandoc
-RUN cabal update && cabal new-install pandoc-${PANDOC_VERSION}
+RUN cabal new-update && cabal new-install pandoc-${PANDOC_VERSION}
 
 # Set Work Directory
 WORKDIR /source
