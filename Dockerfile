@@ -8,6 +8,7 @@ ENV PANDOC_VERSION "2.7.2"
 # Install TeX Utilities
 RUN apt-get update -y \
   && apt-get install -y \
+  --no-install-recommends \
   texlive-latex-base \
   texlive-latex-extra \
   texlive-xetex \
