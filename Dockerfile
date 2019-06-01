@@ -22,9 +22,6 @@ RUN cabal new-update && cabal new-install pandoc-${PANDOC_VERSION}
 # Set Work Directory
 WORKDIR /source
 
-# Copies across input markdown file
-COPY input.md input.md
-
 ENTRYPOINT ["/root/.cabal/bin/pandoc"]
 
-CMD ["-o output.pdf input.md"]
+CMD ["--version"]
