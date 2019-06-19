@@ -12,8 +12,11 @@ RUN apt-get update -y \
   apt-utils \
   texlive-latex-base \
   texlive-latex-extra \
-  texlive-xetex \
+  texlive-math-extra \
+  texlive-xetex latex-xcolor \
   texlive-fonts-extra \
+  texlive-bibtex-extra \
+  fontconfig \
   lmodern
 
 # Install Pandoc
